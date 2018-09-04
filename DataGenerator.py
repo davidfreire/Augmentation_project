@@ -1,7 +1,7 @@
 import numpy as np
 import keras
 from PIL import Image as pil_image
-from augmentations import augmentation_clss #pip install albumentations
+from augment import augmentation_clss #pip install albumentations
 import warnings
 warnings.filterwarnings(action='ignore', category=DeprecationWarning)
 
