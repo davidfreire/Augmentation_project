@@ -1,5 +1,6 @@
 #pip install albumentations
 #Webpage: https://albumentations.readthedocs.io/en/latest/
+import numpy as np
 
 from albumentations import (
     HorizontalFlip, IAAPerspective, ShiftScaleRotate, CLAHE, RandomRotate90,
@@ -23,16 +24,19 @@ class augmentation_clss():
         self.mode = mode
      
     def IAAP(self, image, scale=0.2, p=1):
+        image = image.astype(np.uint8)
         aug = IAAPerspective(scale=scale, p=p)
         output = aug(image=image)['image']
-        return output
+        return output.astype(np.float32)
     
     def SSR (self, image, p=1):
+        image = image.astype(np.uint8)
         aug = ShiftScaleRotate(p=1)
         output = aug(image=image)['image']
-        return output
+        return output.astype(np.float32)
     
     def MediumAug(self, image, p=1):
+        image = image.astype(np.uint8)
         aug = Compose([
             CLAHE(),
             RandomRotate90(),
@@ -44,9 +48,10 @@ class augmentation_clss():
             HueSaturationValue()
         ], p=p)
         output = aug(image=image)['image']
-        return output
+        return output.astype(np.float32)
     
     def StrongAug(self, image, p=1):
+        image = image.astype(np.uint8)
         aug = Compose([
             RandomRotate90(),
             Flip(),
@@ -76,7 +81,7 @@ class augmentation_clss():
             HueSaturationValue(p=0.3),
         ], p=p)
         output = aug(image=image)['image']
-        return output
+        return output.astype(np.float32)
     
     
     
