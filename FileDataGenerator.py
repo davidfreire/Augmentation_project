@@ -281,6 +281,16 @@ class FileDataGen(object):
             subset=subset,
             interpolation=interpolation)
     
+    
+    def transform_image(x):
+        if (self.aug_mode == None):
+            params = self.get_random_transform(x.shape)
+            img = self.image_data_generator.apply_transform(x, params)
+        else:
+            img = self.albumentation_transform(x)
+        img = self.image_data_generator.standardize(img)
+        return img
+    
     def albumentation_transform(self, x):
         aug=augmentation_clss(self.aug_mode)
         augmented_img=aug.augment_img(x)
@@ -841,9 +851,7 @@ class FilelistIterator(Iterator):
             # but not PIL images.
             if hasattr(img, 'close'):
                 img.close()
-            params = self.image_data_generator.get_random_transform(x.shape)
-            x = self.image_data_generator.apply_transform(x, params)
-            x = self.image_data_generator.standardize(x)
+            x = self.image_data_generator.transform_image(x)
             batch_x[i] = x
         # optionally save augmented images to disk for debugging purposes
         if self.save_to_dir:
