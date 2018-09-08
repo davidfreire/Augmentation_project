@@ -1,4 +1,4 @@
-name: dfreire_env2
+name: aug_env
 channels:
   - defaults
 dependencies:
@@ -98,5 +98,5 @@ dependencies:
     - webencodings==0.5.1
     - werkzeug==0.14.1
     - widgetsnbextension==3.4.1
-prefix: //anaconda/envs/dfreire_env2
+prefix: //anaconda/envs/aug_env
 
