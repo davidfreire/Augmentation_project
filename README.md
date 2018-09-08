@@ -8,7 +8,7 @@ Performance is tested in two different jupyter notebooks:
 - samples/Neural_Network_test --> compares the performance of both approaches on the same dataset. Albumentations library results are quite promising (check the loss function graph and the execution time).
 
 
-For this purpose, I've developed my own data generator, that read images, not from a directory but from a list of images and their labels. The FileDataGen class (at FileDataGenerator.py) considers both, Keras classical augmentation algorithm and the albumentation approach. 
+For this purpose, I've developed my own data generator, that read images, not from a directory but from a list of images and their corresponding labels. The FileDataGen class (at FileDataGenerator.py) considers both, Keras classical augmentation algorithm and the albumentations library. 
 
 New albumentations configurations can be implemented by modifying the augmentation_clss (at augment.py).
 
