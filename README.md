@@ -14,7 +14,6 @@ New albumentation configurations can be implemented modifying the augmentation_c
 
 
 The albumentation library has been developed by Buslaev Alexander, Alexander Parinov, Vladimir Iglovikov. 
-
 - Doc at https://albumentations.readthedocs.io
 - Github at https://github.com/albu/albumentations 
 
