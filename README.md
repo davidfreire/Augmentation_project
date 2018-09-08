@@ -10,7 +10,7 @@ Performance is tested in two different jupyter notebooks:
 
 For this purpose, I've developed my own data generator, that read images, not from a directory but from a list of images and their labels. The FileDataGen class (at FileDataGenerator.py) considers both, Keras classical augmentation algorithm and the albumentation approach. 
 
-New albumentations configurations can be implemented modifying the augmentation_clss (at augment.py).
+New albumentation configurations can be implemented modifying the augmentation_clss (at augment.py).
 
 
 The albumentation library has been developed by Buslaev Alexander, Alexander Parinov, Vladimir Iglovikov. 
