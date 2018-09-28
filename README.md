@@ -25,6 +25,6 @@ Reference:<br /><br />
   year = {2018},<br />
   publisher = {GitHub},<br />
   journal = {GitHub repository},<br />
-  howpublished = {\url{https://github.com/davidfreire/Augmentation_project}}, <br />
-  doi= {10.5281/zenodo.1438467}<br />
+  howpublished = {\url{https://github.com/davidfreire/Augmentation_project}}, 
+  <br />doi= {10.5281/zenodo.1438467}<br />
 }
