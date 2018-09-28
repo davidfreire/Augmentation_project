@@ -18,9 +18,9 @@ The albumentations library has been developed by Buslaev Alexander, Alexander Pa
 - Github at https://github.com/albu/albumentations 
 
 <br /><br /><br />
-Reference:<br /><br />
+Citation:<br /><br />
 @misc{Freire18_aug,<br />
-  author = {Freire-Obre\'on, D.},<br />
+  author = {Freire-Obreg\'on, D.},<br />
   title = {Augmentation Project},<br />
   year = {2018},<br />
   publisher = {GitHub},<br />
