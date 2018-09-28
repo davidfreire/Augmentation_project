@@ -17,3 +17,14 @@ The albumentations library has been developed by Buslaev Alexander, Alexander Pa
 - Doc at https://albumentations.readthedocs.io
 - Github at https://github.com/albu/albumentations 
 
+
+
+@misc{Freire18_aug,
+  author = {Freire-Obre\'on, D.},
+  title = {Augmentation Project},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/davidfreire/Augmentation_project}},
+  doi= {10.5281/zenodo.1438467}
+}
